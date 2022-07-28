@@ -1,0 +1,694 @@
+/* Fix value */
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+input:focus{
+    outline: none;
+}
+body{
+    background-color: #18191a;
+    height: 100%;
+}
+
+/* Facebook header desing */
+
+.fb_header {
+    background-color: #242526;
+    padding: 6px 0 6px 0;
+    border-bottom: 1px solid #3a3b3c;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.search_bar {
+    position: relative;
+    margin-left: 8px;
+}
+.search_bar input {
+    background-color: #3a3b3c;
+    border: 1px solid #3a3b3c;
+    padding: 7px;
+    border-radius: 30px;
+    width: 240px;
+    padding-left: 35px;
+    color: #E4E6EB;
+}
+.search_bar button {
+    outline: none;
+    border: none;
+    background: transparent;
+    position: absolute;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #b0b3b8;
+}
+.search_bar button i {
+    font-size: 14px;
+}
+
+/*Header Menu css */
+
+
+.for_header_menu {
+    margin-left: -8.2px;
+}
+.menu_icon_color{
+    fill: #B0B3B8 !important;
+}
+.menu_hover:hover{
+    fill: #0d6efd !important;
+}
+.fb_menu ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0 74px 0 92px;
+}
+.fb_menu ul li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 6px 10px;
+    border-radius: 10px;
+    margin: 0 3px;
+}
+.fb_menu ul li.left {
+    position: relative;
+    left: -1px;
+}
+.fb_menu ul li.active::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3.5px;
+    background-color: #0d6efd;
+    left: 0;
+    bottom: -9px;
+    border-radius: 25px;
+}
+.fb_menu ul li.active:hover {
+    background: transparent;
+}
+.fb_menu ul li:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+.fb_menu ul li a {
+    position: relative;
+    display: block;
+}
+.fb_menu ul li a::before {
+    content: "";
+}
+
+
+/* Header right auth */
+
+.auth ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+.auth ul li {
+    display: block;
+    width: 43px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    height: 43px;
+    line-height: 19px;
+    margin: 0 3px;
+}
+.auth ul li:last-child{
+    display: inherit;
+    width: inherit;
+    text-align: inherit;
+    padding: inherit;
+    border-radius: inherit;
+    background: inherit;
+    height: inherit;
+    line-height: inherit;
+}
+.auth ul li a svg{
+    fill: #e4e6eb;
+}
+.auth img{
+    border-radius: 50%;
+}
+.auth ul li.notification{
+    position: relative;
+}
+.auth ul li.notification::after {
+    content: '2';
+    position: absolute;
+    right: -3px;
+    top: -4px;
+    width: 18px;
+    height: 18px;
+    background: red;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+}
+
+/* Fb body...here... */
+
+.scroll_bars, .scroll_bar_right{
+    position: fixed;
+}
+
+/* Scroll Bar...here... */
+
+/* .fb_user_info, .hover_effect{
+    overflow-y: scroll;
+    height: 90vh;
+} */
+
+/* End */
+
+.padding2px{
+    padding: 0 4px;
+}
+
+.fb_body {
+    padding-top: 72px;
+}
+.list-title h3 {
+    font-size: 15px;
+    color: #E4E6EB;
+    margin: 0;
+}
+.list {
+    transition: all .3s ease-in-out;
+    border-radius: 10px;
+    padding: 8px 8px;
+    display: flex;
+    align-items: center;
+}
+.list:hover{
+    background-color: #3a3b3c;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
+.list-title {
+    margin-left: 12px;
+}
+.list ion-icon {
+    padding: 10px;
+    background: #303031;
+    color: #fff;
+    border-radius: 50%;
+}
+.short_cut_button button {
+    background: transparent;
+    border: none;
+}
+.short_cut_button button a {
+    color: #4599FF;
+    display: block;
+    padding: 7px 9px;
+    border-radius: 5px;
+    transition: all .1s ease-in-out;
+}
+.short_cut_button button a:hover {
+    background-color: #3a3b3c;
+    transition: all .1s ease-in-out;
+}
+
+/* Fb story box area */
+
+.story_box_area {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 90px 10px 88px;
+    position: relative;
+}
+.story_box {
+    width: 112px;
+    height: 196px;
+    background-color: #3a3b3c;
+    border-radius: 10px;
+    padding: 12px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.story_box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, black, rgba(0,0,0, .2));
+    border-radius: 9px;
+    opacity: 0.4;
+    z-index: -1;
+}
+.story_box:hover {
+    background-size: 110%;
+    transition: all .3s ease-in-out;
+}
+.story_box .user_avatar img {
+    border: 4px solid #2e89ff;
+}
+.story_box span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1em;
+    color: #fff;
+}
+.story_box:nth-child(1) {
+    background-image: url(../assets/img/i\'m.jpg);
+    background-size: cover;
+}
+.story_box:hover .story_box:nth-child(1){
+    background-size: 100%;
+    transition: all .3s ease-in-out;
+}
+.story_box:nth-child(2){
+    background-image: url(../assets/img/t2.jpg);
+}
+.story_box:nth-child(3){
+    background-image: url(../assets/img/t3.jpg);
+}
+.story_box:nth-child(4){
+    background-image: url(../assets/img/back_image.jpg);
+}
+.story_box:nth-child(5){
+    background-image: url(../assets/img/t5.jpg);
+}
+
+.right_arrow {
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #3e4042;
+    position: absolute;
+    z-index: 9;
+    right: 10%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.right_arrow:hover{
+    background-color: #525353;
+    transition: all .3s ease-in-out;
+}
+.right_arrow ion-icon{
+    color: #B0B3B8;
+    font-size: 23px;
+}
+.story_box .wone_story {
+    background-color: #202122;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    padding-top: 21px;
+}
+.story_box .wone_story .wone_icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -36%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2e89ff;
+    line-height: 45px;
+    text-align: center;
+    border: 3.9px solid #202122;
+}
+.story_box .wone_story .wone_icon ion-icon {
+    color: #fff;
+    font-size: 22px;
+}
+
+/* Create post modal area..here.. */
+
+.post_modal_area {
+    padding: 0 87px 0 86px;
+}
+.card-body.post_card_body {
+    padding: 13px 15px;
+}
+.card.my-4.post_modal, .active_member_modal, .post_timeline_area .card {
+    background: rgb(36, 37, 38);
+    border-radius: 10px;
+    margin: 16px auto !important;
+}
+.card_modal_button {
+    display: flex;
+}
+.card_modal_button button {
+    background: #3a3b3c;
+    border: none;
+    padding: 9px 12px;
+    border-radius: 30px;
+    width: 100%;
+    margin-left: 8px;
+    text-align: left;
+    color: #B0B3B8;
+    transition: .3s;
+}
+.card_modal_button button:hover {
+    background: #4e4f50;
+    transition: .3s;
+}
+.post_create_modal_header, .post_create_modal_body{
+    background-color: #242526;
+}
+.post_create_modal_header {
+    display: block;
+    text-align: center;
+    border-bottom: none;
+    position: relative;
+}
+.post_create_modal_header h2 {
+    margin: 0;
+    color: #E4E6EB;
+    font-weight: 600;
+    font-size: 28px;
+}
+.post_create_modal_header a {
+    position: absolute;
+    right: 6%;
+    top: 30%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    background: #2f3031;
+    border-radius: 50%;
+    color: #E4E6EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post_create_modal_header a ion-icon {
+    font-size: 26px;
+}
+.create_post_hr {
+    color: #ddddddad;
+    width: 90%;
+    margin: 10px auto;
+}
+
+/* Create post form design*/
+
+#create_post_form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #E4E6EB;
+    font-size: 18px;
+    font-weight: 500;
+    height: 150px;
+    padding: 10px;
+}
+#create_post_form input[name="post_img"], #create_post_form input[name="names"] {
+    border: 1px solid #dddddd4f;
+    background: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    color: #E4E6EB;
+}
+/* End */
+.for_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    padding: 7px;
+    user-select: none;
+}
+.for_icon:hover{
+    background-color: #3a3b3c;
+}
+.for_icon span {
+    color: #B0B3B8;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.start_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.active_member_modal_button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: .3s;
+}
+.active_member_modal_button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: .3s;
+}
+.active_member_modal_button button {
+    color: #0d6efd;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+}
+.active_member_modal_button span {
+    background-image: url(../assets/img/need_image.png);
+    background-position: 0px -219px;
+    background-size: auto;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.active_member_modal_button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid #4599ff26;
+    border-radius: 30px;
+    padding: 4px 3px 4px 10px;
+}
+.active_member_list{
+    position: relative;
+    cursor: pointer;
+}
+.active_member_list::after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-color: #31a24c;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+/* Post Timeline start form here... */
+
+.post_auth_area, .like_comment_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user_info, .like_comment_react {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.user_details span a {
+    color: #E4E6EB;
+    font-weight: 600;
+    font-size: 16px;
+}
+.user_details:last-child span, .react_details span, .share_count span {
+    color: #B0B3B8;
+    display: block;
+    font-size: 13px;
+}
+.react_details span, .share_count span {
+    color: #B0B3B8;
+    display: block;
+    font-size: 16px;
+}
+.more_details ion-icon {
+    color: #E4E6EB;
+    font-size: 19px;
+    padding: 9px;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+}
+.more_details ion-icon:hover {
+    background: #3a3b3c;
+    transition: .3s;
+}
+
+/* Dropdown menu(Edit - Delete Post...) */
+
+.edit_delete_post a.dropdown-toggle {
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    transition: all .1s ease-in-out;
+}
+.edit_delete_post a.dropdown-toggle:hover {
+    background: #3a3b3c;
+    border: none;
+    transition: all .1s ease-in-out;
+}
+.edit_delete_post a.dropdown-toggle::after{
+    display: none;
+}
+.edit_delete_post .dropdown-menu {
+    background: #242526;
+    border: .1px solid #dddddd1f;
+    padding: 5px;
+}
+.edit_delete_post .dropdown-menu a.dropdown-item {
+    color: #E4E6EB;
+    border-radius: 5px;
+}
+.edit_delete_post .dropdown-menu a.dropdown-item:hover{
+    background-color: #3a3b3c;
+}
+
+/* Like comment area here... */
+.like_comment_react img {
+    width: 21px;
+    object-fit: cover;
+}
+.for_icon.like_comments1, .for_icon.like_comments2, .for_icon.like_comments3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    padding: 7px;
+    gap: 5px;
+    user-select: none;
+}
+.like_comments1 span:nth-child(1) {
+    background-image: url(./img/like-comment.png);
+    background-position: 0px -297px;
+    background-size: auto;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.like_comments2 span:nth-child(1) {
+    background-image: url(./img/like-comment.png);
+    background-position: 0px -259px;
+    background-size: auto;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.like_comments3 span:nth-child(1) {
+    background-image: url(./img/like-comment.png);
+    background-position: 0px -316px;
+    background-size: auto;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+/* Fb right side bar... */
+
+.short_button button {
+    background: transparent;
+    border: none;
+}
+.short_button button a {
+    color: #B0B3B8;
+    border-radius: 50%;
+    transition: all .1s ease-in-out;
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+    display: inline-block;
+}
+.short_button button a:hover {
+    background-color: #3a3b3c;
+    transition: all .1s ease-in-out;
+}
+
+/* hr tag... */
+
+.hr {
+    color: #f7f9ffba;
+    width: 92%;
+    margin: 12px auto 14px;
+}
+.short_button a {
+    color: #B0B3B8;
+    border-radius: 50%;
+    transition: all .1s ease-in-out;
+    width: 30px;
+    height: 30px;
+    line-height: 27px;
+    display: inline-block;
+    text-align: center;
+}
+.short_button a:nth-child(3){
+    line-height: -1px;
+}
+.short_button a:nth-child(3) ion-icon {
+    transform: translateY(3px);
+}
+.short_button a:hover {
+    background-color: #3a3b3c;
+    transition: all .1s ease-in-out;
+}
+
+
+/* Active Pepole css */
+
+#active_pepole .list .list-icon{
+    position: relative;
+}
+#active_pepole .list .list-icon::after {
+    content: "";
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    width: 8px;
+    height: 7px;
+    border-radius: 50%;
+    background: #46ab5e;
+}
